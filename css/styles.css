@@ -1,0 +1,12 @@
+.navbar {
+	
+	background: rgba(0,0,0,0.8);
+	font-weight: bold;
+	
+}
+
+.pager li .active_link {
+	
+	background: #a8a1a1;
+	
+}
