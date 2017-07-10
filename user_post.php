@@ -9,7 +9,7 @@
 					$the_post_user = escape($_GET['user']);
 				}
 			?>
-			<h1 class="page-header">All posts by <?php echo $the_post_user ?></h1>
+			<h1 class="page-header">All Posts by <?php echo $the_post_user ?></h1>
       <?php
 			 	if(isset($_SESSION['role']) && $_SESSION['role'] == 'admin') {
 					$post_query_count = "SELECT * FROM posts WHERE post_user = '{$the_post_user}'";
@@ -65,11 +65,6 @@
         	<a href="post.php?p_id=<?php echo $post_id; ?>">
         		<img class="img-responsive" src="images/<?php echo $post_image;?>" alt="">
         	</a>
-        	<hr>
-        	<p><?php echo $post_content . "..."; ?></p>
-        	<a class="btn btn-primary" href="post.php?p_id=<?php echo $post_id; ?>">
-						Read More <span class="glyphicon glyphicon-chevron-right"></span>
-					</a>
         	<hr>
 			<?php
 				}
