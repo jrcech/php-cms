@@ -46,20 +46,20 @@
       <div class="row">
         <div class="col-lg-12">
 					<h1 class="page-header">Your Profile</h1>
-					<form action="" method="post" enctype="multipart/form-data">
+					<form method="post" enctype="multipart/form-data">
 						<div class="form-group">
-							<label for="post_title">Firstname</label>
-							<input type="text" class="form-control" value="<?php echo $user_firstname; ?>" name="user_firstname">
+							<label for="user_firstname">Firstname</label>
+							<input type="text" class="form-control" id="user_firstname" value="<?php echo $user_firstname; ?>" name="user_firstname">
 						</div>
 
 						<div class="form-group">
-							<label for="post_status">Lastname</label>
-							<input type="text" class="form-control" value="<?php echo $user_lastname; ?>" name="user_lastname">
+							<label for="user_lastname">Lastname</label>
+							<input type="text" class="form-control" id="user_lastname" value="<?php echo $user_lastname; ?>" name="user_lastname">
 						</div>
 
 						<div class="form-group">
-							<label for="post_status">Role</label>
-							<select name="user_role" class="form-control">
+							<label for="user_role">Role</label>
+							<select name="user_role" class="form-control" id="user_role">
 								<option value="admin"><?php echo $user_role; ?></option>
 								<?php
 									if($user_role == 'admin') {
@@ -72,18 +72,18 @@
 						</div>
 
 						<div class="form-group">
-							<label for="post_tags">Username</label>
-							<input type="text" class="form-control" value="<?php echo $user_name; ?>" name="user_name">
+							<label for="user_name">Username</label>
+							<input type="text" class="form-control" id="user_name" value="<?php echo $user_name; ?>" name="user_name">
 						</div>
 
 						<div class="form-group">
-							<label for="post_tags">Email</label>
-							<input type="email" class="form-control" value="<?php echo $user_email; ?>" name="user_email">
+							<label for="user_email">Email</label>
+							<input type="email" class="form-control" id="user_email" value="<?php echo $user_email; ?>" name="user_email">
 						</div>
 
 						<div class="form-group">
-							<label for="post_tags">Password</label>
-							<input type="password" class="form-control" value="<?php echo $user_password; ?>" name="user_password">
+							<label for="user_password">Password</label>
+							<input type="password" class="form-control" id="user_password" value="<?php echo $user_password; ?>" name="user_password">
 						</div>
 
 						<div class="form-group">

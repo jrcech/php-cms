@@ -1,4 +1,4 @@
-<form action="" method="post">
+<form method="post">
 	<div class="form-group">
 		<label for="cat_title">Update Category</label>
 		<?php
@@ -16,7 +16,7 @@
 					$cat_id = $row ['cat_id'];
 					$cat_title = $row ['cat_title'];
 		?>
-				  <input value="<?php if(isset($cat_title)) {echo $cat_title;} ?>" class="form-control" type="text" name="cat_title">
+				  <input value="<?php if(isset($cat_title)) {echo $cat_title;} ?>" class="form-control" type="text" name="cat_title" id="cat_title">
 		<?php
         }
 			}

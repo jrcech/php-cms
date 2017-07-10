@@ -1,8 +1,7 @@
 <?php checkBoxesPosts(); ?>
-<?php include "delete_modal.php"; ?>
 <h1 class="page-header">Posts</h1>
 
-<form action="" method="post">
+<form method="post">
 	<div class="row space">
 		<div class="col-xs-4 options" id="bulkOptionsContainer">
 			<select name="bulk_options" class="form-control">
@@ -76,7 +75,7 @@
   						echo "<td>{$post_title}</td>";
   						echo "<td>{$cat_title}</td>";
   						echo "<td>{$post_status}</td>";
-  						echo "<td><img width='100' src='../images/{$post_image}'</td>";
+  						echo "<td><img width='100' src='../images/{$post_image}' alt='Post image' /></td>";
   						echo "<td>{$post_tags}</td>";
 
   						$query = "SELECT * FROM comments WHERE comment_post_id = $post_id";
@@ -91,7 +90,7 @@
   						echo "<td>{$post_date}</td>";
   						echo "<td><a href='../post.php?p_id={$post_id}'>View</a></td>";
   						echo "<td><a href='posts.php?source=edit_post&p_id={$post_id}'>Edit</a></td>";
-  						echo "<td><a rel='$post_id' href='javascript:void(0)' class='delete_link'>Delete</a></td>";
+  						echo "<td><a href='posts.php?delete={$post_id}' class='delete_link'>Delete</a></td>";
   						echo "<td><a href='posts.php?reset={$post_id}'>Reset Views</a></td>";
   					echo "</tr>";
   				}

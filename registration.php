@@ -21,26 +21,26 @@
           <h1>Register</h1>
           <p>You will be registered as a subscriber. In order to get to the CMS you will have to wait for admin to approve you.</p>
           <hr>
-          <form role="form" action="registration.php" method="post" id="registrationForm" autocomplete="off">
+          <form action="registration.php" method="post" id="registrationForm" autocomplete="off">
             <div id="error" class="bg-error"></div>
             <div class="form-group has-feedback" id="usernameGroup">
               <label for="username" class="control-label">Username</label>
-              <input type="text" name="username" id="username" class="form-control" placeholder="Enter Desired Username" aria-describedby="usernameErrorStatus">
+              <input type="text" name="username" id="username" class="form-control" placeholder="Enter Desired Username">
             </div>
 
             <div class="form-group has-feedback" id="emailGroup">
               <label for="email" class="control-label">Email</label>
-              <input type="email" name="email" id="email" class="form-control" placeholder="somebody@example.com" aria-describedby="emailErrorStatus">
+              <input type="email" name="email" id="email" class="form-control" placeholder="somebody@example.com">
             </div>
 
             <div class="form-group has-feedback passwordGroup">
               <label for="password" class="control-label">Password</label>
-              <input type="password" name="password" id="password" class="form-control" placeholder="Password" aria-describedby="passwordErrorStatus">
+              <input type="password" name="password" id="password" class="form-control" placeholder="Password">
             </div>
 
             <div class="form-group has-feedback passwordGroup">
               <label for="password" class="control-label">Confirm Password</label>
-              <input type="password" name="passwordConfirm" id="passwordConfirm" class="form-control" placeholder="Confirm Password" aria-describedby="passwordErrorStatus">
+              <input type="password" name="passwordConfirm" id="passwordConfirm" class="form-control" placeholder="Confirm Password">
             </div>
 
             <input type="submit" name="submit" id="submit" class="btn btn-custom btn-lg btn-block" value="Register">

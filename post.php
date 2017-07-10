@@ -63,20 +63,20 @@
   				?>
     	      <div class="well">
     	        <h4>Leave a Comment:</h4>
-    	        <form role="form" method="post" action="">
+    	        <form method="post">
     		        <div class="form-group">
     	            <label for="comment_author">Author:</label>
-    	            <input class="form-control" type="text" name="comment_author" value="">
+    	            <input class="form-control" type="text" name="comment_author" id="comment_author">
     	          </div>
 
     	          <div class="form-group">
-                  <label for="comment_author">Email:</label>
-                  <input class="form-control" type="email" name="comment_email" value="">
+                  <label for="comment_email">Email:</label>
+                  <input class="form-control" type="email" name="comment_email" id="comment_email">
     	          </div>
 
                 <div class="form-group">
                   <label for="comment_content">Comment:</label>
-                  <textarea class="form-control" rows="3" name="comment_content"></textarea>
+                  <textarea class="form-control" rows="3" name="comment_content" id="comment_content"></textarea>
                 </div>
                 <button type="submit" name="create_comment" class="btn btn-primary">Submit</button>
     	        </form>

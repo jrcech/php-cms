@@ -21,7 +21,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
     <script src="https://use.fontawesome.com/81ebd77a72.js"></script>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-    <script src="http://cdn.tinymce.com/4/tinymce.min.js"></script>
 
     <link href="css/sb-admin.css" rel="stylesheet" />
     <link href="css/styles.css" rel="stylesheet" />

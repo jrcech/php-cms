@@ -1,5 +1,5 @@
 <?php checkBoxesComments(); ?>
-<form action="" method="post">
+<form method="post">
 	<div class="row space">
 		<div class="col-xs-4 options" id="bulkOptionsContainer">
 			<select name="bulk_options" class="form-control">

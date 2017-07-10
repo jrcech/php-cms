@@ -63,16 +63,16 @@
 
 <h1 class="page-header">Edit Post</h1>
 
-<form action="" method="post" enctype="multipart/form-data">
+<form method="post" enctype="multipart/form-data">
 	<div class="form-group">
 		<label for="post_title">Post Title</label>
-		<input value="<?php echo $post_title; ?>" type="text" class="form-control" name="post_title">
+		<input value="<?php echo $post_title; ?>" type="text" class="form-control" id="post_title" name="post_title">
 	</div>
 
 	<div class="row">
 		<div class="form-group col-md-4">
 			<label for="post_category">Post Category</label>
-			<select name="post_category" class="form-control">
+			<select name="post_category" class="form-control" id="post_category">
 				<?php
 					$query = "SELECT * FROM categories";
 
@@ -95,7 +95,7 @@
 
 		<div class="form-group col-md-4">
 			<label for="post_user">Post User</label>
-			<select name="post_user" class="form-control">
+			<select name="post_user" class="form-control" id="post_user">
 				<?php
 					echo "<option value='{$post_user}'>{$post_user}</option>";
 					$users_query = "SELECT * FROM users";
@@ -114,7 +114,7 @@
 
 		<div class="form-group col-md-4">
 			<label for="post_status">Post Status</label>
-			<select name="post_status" class="form-control">
+			<select name="post_status" class="form-control" id="post_status">
 				<option value="<?php echo $post_status; ?>"><?php echo $post_status; ?></option>
 				<?php
 					if($post_status == 'published') {
@@ -129,18 +129,18 @@
 
 	<div class="form-group">
 		<label for="post_image">Post Image</label>
-		<img src="../images/<?php echo $post_image; ?>" width="100">
-		<input type="file" name="post_image">
+		<img src="../images/<?php echo $post_image; ?>" width="100" alt="Post image">
+		<input type="file" name="post_image" id="post_image">
 	</div>
 
 	<div class="form-group">
 		<label for="post_tags">Post Tags</label>
-		<input value="<?php echo $post_tags; ?>" type="text" class="form-control" name="post_tags">
+		<input value="<?php echo $post_tags; ?>" type="text" class="form-control" id="post_tags" name="post_tags">
 	</div>
 
 	<div class="form-group">
 		<label for="post_content">Post Content</label>
-		<textarea class="form-control" name="post_content" cols="30" rows="10"><?php echo str_replace('\r\n', '</br>', $post_content); ?></textarea>
+		<textarea class="form-control" id="post_content" name="post_content" cols="30" rows="10"><?php echo str_replace('\r\n', '</br>', $post_content); ?></textarea>
 	</div>
 
 	<div class="form-group">

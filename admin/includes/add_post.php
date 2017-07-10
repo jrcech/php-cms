@@ -24,16 +24,16 @@
 ?>
 <h1 class="page-header">Add Post</h1>
 
-<form action="" method="post" enctype="multipart/form-data">
+<form enctype="multipart/form-data">
 	<div class="form-group">
 		<label for="post_title">Post Title</label>
-		<input type="text" class="form-control" name="post_title">
+		<input type="text" class="form-control" name="post_title" id="post_title">
 	</div>
 
 	<div class="row">
 		<div class="form-group col-md-4">
 			<label for="post_category">Post Category</label>
-			<select name="post_category" class="form-control">
+			<select name="post_category" class="form-control" id="post_category">
 				<?php
 					$query = "SELECT * FROM categories";
 					$select_categories = mysqli_query($connection, $query);
@@ -51,7 +51,7 @@
 
 		<div class="form-group col-md-4">
 			<label for="post_user">Post User</label>
-			<select name="post_user" class="form-control">
+			<select name="post_user" class="form-control" id="post_user">
 				<?php
 					$users_query = "SELECT * FROM users";
 					$select_users = mysqli_query($connection, $users_query);
@@ -68,7 +68,7 @@
 
 		<div class="form-group col-md-4">
 			<label for="post_status">Post Status</label>
-			<select name="post_status" class="form-control">
+			<select name="post_status" class="form-control" id="post_status">
 				<option value="draft">Select Options</option>
 				<option value="published">Publish</option>
 				<option value="draft">Draft</option>
@@ -78,17 +78,17 @@
 
 	<div class="form-group">
 		<label for="post_image">Post Image</label>
-		<input type="file" name="post_image">
+		<input type="file" name="post_image" id="post_image">
 	</div>
 
 	<div class="form-group">
 		<label for="post_tags">Post Tags</label>
-		<input type="text" class="form-control" name="post_tags">
+		<input type="text" class="form-control" name="post_tags" id="post_tags">
 	</div>
 
 	<div class="form-group">
 		<label for="post_content">Post Content</label>
-		<textarea class="form-control" name="post_content" cols="30" rows="10"></textarea>
+		<textarea class="form-control" name="post_content" cols="30" rows="10" id="post_content"></textarea>
 	</div>
 
 	<div class="form-group">

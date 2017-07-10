@@ -1,4 +1,4 @@
-<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+<nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container">
     <div class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -50,7 +50,7 @@
           	  echo "<li><a href='admin'>Admin</a></li>";
             }
           }
-          
+
           if(isset($_SESSION['role'])) {
         	  if(isset($_GET['p_id'])) {
           	  $the_post_id = escape($_GET['p_id']);
